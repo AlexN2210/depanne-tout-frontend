@@ -11,7 +11,7 @@ const AdminLogin = ({ isOpen, onClose }) => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/admin/login', {
+      const response = await fetch('depanne-tout-backend.vercel.app/api/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

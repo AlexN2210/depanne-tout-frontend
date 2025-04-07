@@ -10,7 +10,7 @@ const Vehicles = () => {
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/vehicles");
+        const res = await fetch("depanne-tout-backend.vercel.app/api/vehicles");
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
         }
